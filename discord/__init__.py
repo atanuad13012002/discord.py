@@ -19,7 +19,6 @@ __version__ = '1.4.0a'
 
 from collections import namedtuple
 import logging
-
 from .client import Client
 from .appinfo import AppInfo
 from .user import User, ClientUser, Profile
@@ -43,7 +42,7 @@ from .invite import Invite, PartialInviteChannel, PartialInviteGuild
 from .widget import Widget, WidgetMember, WidgetChannel
 from .object import Object
 from .reaction import Reaction
-from . import utils, opus, abc
+from .import utils, opus, abc
 from .enums import *
 from .embeds import Embed
 from .mentions import AllowedMentions
@@ -54,6 +53,7 @@ from .voice_client import VoiceClient
 from .audit_logs import AuditLogChanges, AuditLogEntry, AuditLogDiff
 from .raw_models import *
 from .team import *
+
 
 VersionInfo = namedtuple('VersionInfo', 'major minor micro releaselevel serial')
 
